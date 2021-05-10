@@ -1,0 +1,111 @@
+body {
+	padding: 0;
+}
+
+.header {
+	border-bottom: solid 1px $color-gray-light;
+	display: flex;
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+	& img {
+		display: flex;
+	}
+}
+
+.main-content {
+	@media (min-width: $screen-lg) {
+		border-right: solid 1px $color-gray-light;
+	}
+}
+
+.page-wrapper,
+.site-content {
+	padding: 20px 0;
+}
+
+.page-wrapper {
+	& .item:not(:last-of-type) {
+		padding-bottom: 20px;
+	}
+}
+
+.page-title,
+.single-title {
+	margin: 0 0 20px 0;
+}
+
+.post-info {
+	margin: 10px 0 0 0;
+}
+
+.tags {
+	margin: 0;
+}
+
+.excerpt {
+	padding: 16px 0 0 0;
+	margin: 0;
+}
+
+ul {
+	@apply reset-list;
+}
+
+p a,
+a {
+	color: $color-secondary;
+
+	@media (hover: hover) {
+		&:hover {
+			color: $color-secondary-dark;
+		}
+	}
+}
+
+p:empty {
+	display: none;
+}
+
+.widget-title {
+	font-size: $size-lead-mobile;
+	line-height: $lineheight-lead-mobile;
+	font-weight: 700;
+
+	@media (min-width: $screen-lg) {
+		font-size: $size-lead-desktop;
+		line-height: $lineheight-lead-desktop;
+	}
+}
+
+.widget-item {
+	margin: 20px 0;
+
+	&:first-of-type {
+		margin-top: 0;
+
+		@media (min-width: $screen-lg) {
+			margin: 30px 0;
+		}
+	}
+
+	@media (min-width: $screen-lg) {
+		margin: 30px 0;
+	}
+}
+
+.post-edit-link {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+
+input[type="text"] {
+	min-width: 0;
+}
+
+.footer {
+	border-top: solid 1px $color-gray-light;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
